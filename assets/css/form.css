@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#navBar {
+    font-size: 25px;
+    background-color: #000;
+}
+
+#navBar p {
+    color: #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+}
+
+#navBar a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#navBar a:visited {
+    color: #FFF;
+}
+
+.greenLetter {
+    color: rgb(68, 202, 68);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+}
