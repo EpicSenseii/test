@@ -6,26 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/Logo 500x500  px.jpeg">
     <title>HubertEat</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id="nav" class="navBar nav-transparent">
             <div id="left">
-                <h1>HUBERTeat</h1>
+                <img class="burgerIcon" src="assets/img/icons8-menu-50.png" alt="">
+                <a href="" id="navTitle"><span class="greenTitle">Hubert</span> Eat</a>
             </div>
             <div id="right">
-                <button class="button" id="whiteButton">Connexion</button>
-                <button class="button" id="blackButton">Inscription</button>
+                <button class="button whiteButton"><img class="userIcon" src="assets/img/icons8-account-48.png"
+                        alt=""><a href="">Connexion</a></button>
+                <button class="button blackButton"><a style="color:white;" href="">Inscription</a></button>
             </div>
         </nav>
     </header>
     <main>
         <section id="hero">
-            <img src="assets/img/backgound_img.jpg" alt="">
+            <div class="heroDesc">
+                <h1 class="heroMainDesc">Vos plats préférés, directement à votre porte</h1>
+                <div class="form">
+                    <div class="inputForm">
+                        <img class="userLoc" src="assets/img/icons8-location-30.png" alt="">
+                        <input class="inputLoc" type="text" name="" id=""
+                            placeholder="Saisissez l'adresse de livraison.">
+                    </div>
+                    <div class="delivery">
+                        <select class="selectForm" name="" id="">
+                            <option value="">Livrer maintenant</option>
+                            <option value="">Planifier pour plus tard</option>
+                        </select>
+                    </div>
+                    <input class="submitBtn" type="submit" name="" id="" value="Trouver un restaurant">
+                </div>
+                <h1 class="heroSubDesc"><a href="" class="underline">Connexion</a> pour afficher vos adresses récentes
+                </h1>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="blogArticle">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/dd109bb1f7572eed.png" alt="">
+                <h2>Aidez vos collaborateurs à se restaurer</h2>
+                <a href="" class="underline">Créez un compte professionnel</a>
+            </div>
+            <div class="blogArticle">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/8148ef38ec4096b7.png" alt="">
+                <h2>Les plats de vos restaurants préféres, livrés chez vous</h2>
+                <a href="" class="blogCta underline">Ajoutez votre restaurant</a>
+            </div>
+            <div class="blogArticle">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/7a9d4feba62d2c0b.png" alt="">
+                <h2>Livrez avec Hubert Eat</h2>
+                <a href="" class="blogCta underline">Devenez coursier-partenaire</a>
+            </div>
+        </section>
+        <section class="localisation">
+            <div class="locHeader">
+                <h2>Villes à proximité</h2>
+                <a href="" class="blogCta underline">Afficher toutes les villes (+ 500)</a>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10499.4013356529!2d2.340871687158203!3d48.86106429999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f54d7327ce9%3A0x83c40dbb7f4b6f6a!2sUber%20Eats%20France%20SAS!5e0!3m2!1sfr!2sfr!4v1682672335485!5m2!1sfr!2sfr"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="allCities">
+                <div class="citiesRow">
+                    <a href="">Amiens</a>
+                    <a href="">Angers</a>
+                    <a href="">Amiens</a>
+                    <a href="">Clermont-Ferrand</a>
+                    <a href="">Dijon</a>
+                    <a href="">Grenoble</a>
+                </div>
+                <div class="citiesRow">
+                    <a href="">La Rochelle</a>
+                    <a href="">Lille</a>
+                    <a href="">Limoges</a>
+                    <a href="">Lyon</a>
+                    <a href="">Marseille</a>
+                    <a href="">Montpellier</a>
+                </div>
+                <div class="citiesRow">
+                    <a href="">Mulhouse</a>
+                    <a href="">Nantes</a>
+                    <a href="">Nice</a>
+                    <a href="">Orléans</a>
+                    <a href="">Paris</a>
+                    <a href="">Perpignan</a>
+                </div>
+                <div class="citiesRow">
+                    <a href="">Reims</a>
+                    <a href="">Rennes</a>
+                    <a href="">Rouen</a>
+                    <a href="">Strasbourg</a>
+                    <a href="">Toulouse</a>
+                    <a href="">Tours</a>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <hr>
+        <div class="foot">
+            <div class="leftFoot">
+                <a href="" id="navTitle"><span class="greenTitle">Hubert</span> Eat</a>
+            </div>
+            <div class="middleFoot footCol">
+                <a href="">Obtenir de l'aide</a>
+                <a href="">Ajoutez votre restaurant</a>
+                <a href="">Devenez coursier-partenaire</a>
+                <a href="">Créez un compte professionnel</a>
+                <a href="">Promotions</a>
+            </div>
+            <div class="rightFoot footCol">
+                <a href="">Restaurants à proximité</a>
+                <a href="">Afficher toutes les villes</a>
+                <a href="">Commandes à récupérer à proximité</a>
+                <a href="">A propos d'Hubert Eat</a>
+                <a href="">Français</a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
